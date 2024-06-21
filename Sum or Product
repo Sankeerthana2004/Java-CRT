@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int num1,num2;
+        Scanner scan=new Scanner(System.in);
+        num1=scan.nextInt();
+        num2=scan.nextInt();
+        int product=(int)num1*num2;
+        if(product>1000)
+        {
+            System.out.println(num1+num2);
+        }
+        else
+        {
+            System.out.printf("%d",product);
+        }
+    }
+}
