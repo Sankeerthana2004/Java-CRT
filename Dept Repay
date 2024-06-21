@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int principal,rate,years;
+        Scanner scan=new Scanner(System.in);
+        principal=scan.nextInt();
+        rate=scan.nextInt();
+        years=scan.nextInt();
+        float intrest=(float)(principal*rate*years)/100;
+        float amo=(float)(principal+intrest);
+        float dis=(float)0.02*intrest;
+        float finalamount=(float)(amo-dis);
+        System.out.printf("%.2f\n",intrest);
+        System.out.printf("%.2f\n",amo);
+        System.out.printf("%.2f\n",dis);
+        System.out.printf("%.2f\n",finalamount);
+    }
+}
