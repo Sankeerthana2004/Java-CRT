@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int num;
+        Scanner scan=new Scanner(System.in);
+        num=scan.nextInt();
+        int rem=(int)num%10;
+        if(rem<5)
+        {
+            System.out.println(num-rem);
+        }
+        else
+        {
+             System.out.println((num+10)-(rem));
+        }
+    }
+}
