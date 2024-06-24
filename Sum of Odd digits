@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int n,d,sum=0;
+        Scanner s=new Scanner(System.in);
+        n=s.nextInt();
+        while(n>0)
+        {
+            d=n%10;
+            if(d%2!=0)
+            {
+                sum=sum+d;
+            }
+            n=n/10;
+        }
+        System.out.println(sum);
+    }
+}
