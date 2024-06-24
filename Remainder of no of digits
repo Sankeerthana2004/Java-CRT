@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int num;
+        Scanner s=new Scanner(System.in);
+        num=s.nextInt();
+      int rem = countDigits(num);
+        System.out.println(rem);
+        
+    }
+    public static int countDigits(int num)
+    {
+      int n=(int)(Math.log10(num)+1);
+        int rem=num%n;
+        return rem;
+    }
+}
