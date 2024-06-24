@@ -1,0 +1,60 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+         int t;
+        Scanner s=new Scanner(System.in);
+        t=s.nextInt();
+        if(t>=1&&t<100000)
+        {
+            for(int i=1;i<=t;i++)
+            {
+                int a=s.nextInt();
+                char ch=s.next().charAt(0);
+                int b=s.nextInt();
+                char d=s.next().charAt(0);
+                int c=s.nextInt();
+            if(ch=='+')
+            {
+                if((a+b)==c)
+                {
+                    System.out.println("Yes");
+                }
+                else
+                {
+                    System.out.println(a+b);
+                }
+            }
+            else if(ch=='-')
+            {
+                if((a-b)==c)
+                {
+                    System.out.println("Yes");
+                }
+            else
+            {
+                System.out.println(a-b);
+            }
+            }
+            else if(ch=='*')
+            {
+                if((a*b)==c)
+                {
+                    System.out.println("Yes");
+                }
+                else
+                {
+                    System.out.println(a*b);
+                }
+            }
+            else
+            {
+                System.out.println("Invalid Input");
+            }
+            }
+        }
+    }
+}
