@@ -1,0 +1,60 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        int t;
+        Scanner s=new Scanner(System.in);
+        t=s.nextInt();
+        if(t>=1&&t<100000)
+        {
+            for(int i=1;i<=t;i++)
+            {
+                int a=s.nextInt();
+                char c=s.next().charAt(0);
+                int b=s.nextInt();
+            if(c=='>')
+            {
+                if(a>b)
+                {
+                    System.out.println("Right");
+                }
+                else
+                {
+                    System.out.println("Wrong");
+                }
+            }
+            else if(c=='<')
+            {
+                if(a<b)
+                {
+                    System.out.println("Right");
+                }
+            else
+            {
+                System.out.println("Wrong");
+            }
+            }
+            else if(c=='=')
+            {
+                if(a==b)
+                {
+                    System.out.println("Right");
+                }
+                else
+                {
+                    System.out.println("Wrong");
+                }
+            }
+            else
+            {
+                System.out.println("Invalid Input");
+            }
+            }
+        }
+    }
+}
